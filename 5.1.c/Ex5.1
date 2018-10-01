@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main (void) {
+   int a,b;
+   int* p;
+   printf ("Valores: ");
+   scanf ("%d %d", &a, &b);
+   if (a > b) {
+     p = &a;
+   }else if (b > a) {
+     p = &b;
+   }
+   printf("Maior valor: %d\n", *p);
+   *p = *p - 50;
+   printf("Valor final: %d\n", *p);
+   return 0;
+}
