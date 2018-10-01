@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(void) {
+   int d;
+   printf("Quantia em dolares: ");
+   scanf("%d", &d);
+   float r = d * 3.17;
+   if (r > 1000) {
+      printf("Muito caro\n");
+   }else {
+      printf("Bom negocio\n");
+   }
+   return 0;
+}
