@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main (void) {
+   float mph;
+   printf("Velocidade em milhas: ");
+   scanf("%f", &mph);
+   float kpm = mph * 1.6;
+   if ((kpm > 80) && (kpm < 100)) {
+      printf("Mantenha\n");
+   }else if (kpm < 80) {
+      printf("Acelere\n");
+   }else if (kpm > 100) {
+      printf("Desacelere\n");
+   }
+   return 0;
+}
