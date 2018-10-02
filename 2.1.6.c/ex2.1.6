@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(void) {
+   int n;
+   printf("Valor de N: ");
+   scanf("%d", &n);
+   int i = 1;
+   int soma = 0;
+   for (i = 1; i < n + 1; i++) {
+     soma = soma + (i*i);
+   }
+   printf("Valor final: %d\n", soma);
+   return 0;
+}
