@@ -35,6 +35,7 @@ int main(void) {
     printf("arr[%d][%d]: %d\n", i,j , arr[i][j]);
     }
    }
-  media(arr,l,c);
+  float med = media(arr,l,c);
+  printf("Media dos valores: %.2f\n", med);
   return 0;
 }
