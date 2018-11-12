@@ -14,7 +14,6 @@ float media(int Vec[50], int n) {
      }
   printf("Soma dos valores do vetor: %f\n", soma);
   float m = soma/n;
-  printf("Media dos valores: %f\n", m);
   return m;
 }
 int main(void) {
@@ -27,6 +26,7 @@ int main(void) {
   for(i = 0; i < N; i++) {
     printf("vec[%d]: %d\n", i, *(vec + i));
     }
-  media(vec,N);
+  float med = media(vec,N);
+  printf("Media dos valores: %.2f\n", med);
   return 0;
 }
