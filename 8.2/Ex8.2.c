@@ -16,6 +16,7 @@ int main(void) {
      x[i] = fgetc(f);
      printf("%s", (x+i));
   }
+  x[strlen(s) + 1] = '\0';
   fclose(f);
   printf("\n");
   return 0;
