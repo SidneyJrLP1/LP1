@@ -11,12 +11,12 @@ int main(void) {
   }
   fclose(f);
   char x[25];
+  x[strlen(s) + 1] = '\0';
   fopen("/tmp/arq-01.txt", "r");
   for (i = 0; i < strlen(s); i++) {
      x[i] = fgetc(f);
      printf("%s", (x+i));
   }
-  x[strlen(s) + 1] = '\0';
   fclose(f);
   printf("\n");
   return 0;
